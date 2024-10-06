@@ -4,9 +4,9 @@ import (		//from main package we import "fmt" to print the data on screen.
 	"fmt"
 )
 
-func main() {													//starting the main function.
+func main() {										//starting the main function.
 	fmt.Println("Creating first blockchain:")					//printing message.
-	newBlockchain := NewBlockchain()							//newBlockchain is the function of type struct defined in blockchain.go file.	
+	newBlockchain := NewBlockchain()						//newBlockchain is the function of type struct defined in blockchain.go file.	
 	newBlockchain.Addblock("First transaction")					//using newBlockchain object, Addblock function is called which is defined in blockchain.go file.
 	newBlockchain.Addblock("Second transcation")		
 	for i, block := range newBlockchain.Blocks {					//for is used to print the blockchain(chaining the blocks together) and its range is number of blocks added.
